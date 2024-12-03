@@ -1,3 +1,5 @@
 extends Node2D
 
-@export var my_resource: MyResource
+@export var first: MyResource
+
+@export var second: MyResource

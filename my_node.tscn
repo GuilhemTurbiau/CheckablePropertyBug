@@ -1,8 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbsg7aywm60rv"]
+[gd_scene load_steps=5 format=3 uid="uid://dbsg7aywm60rv"]
 
 [ext_resource type="Script" path="res://my_node.gd" id="1_py44v"]
 [ext_resource type="Resource" uid="uid://baxfwcavxmwc" path="res://my_resource.tres" id="2_60r42"]
+[ext_resource type="Script" path="res://my_resource.gd" id="3_qcre7"]
+
+[sub_resource type="Resource" id="Resource_n86jx"]
+script = ExtResource("3_qcre7")
+my_property = 0
 
 [node name="MyNode" type="Node2D"]
 script = ExtResource("1_py44v")
-my_resource = ExtResource("2_60r42")
+first = ExtResource("2_60r42")
+second = SubResource("Resource_n86jx")
